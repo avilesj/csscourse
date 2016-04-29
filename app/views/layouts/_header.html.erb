@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<nav class="navbar navbar-inverse navbar-fixed-bottom navbar-default">
     <ul class="nav navbar-nav">
       <li><%= link_to "CAIF", root_path(:anchor => "home") %></li>
       <li><%= link_to "Nuestros Servicios", root_path(:anchor => "work") %></li>
@@ -8,9 +8,9 @@
     </ul>
     <div id="socialcontainer" class="container-fluid">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= image_tag 'facebook.png', class: "img-circle", id: "socialmedia" %></li>
-        <li><%= image_tag 'twitter.png', class: "img-circle", id: "socialmedia" %></li>
-        <li><%= image_tag 'instagram.png', class: "img-circle", id: "socialmedia" %></li>
+        <li><%= link_to (image_tag 'facebook.png',  id: "socialmedia"), "https://www.facebook.com/CAIF-240650029420365", id: "socialmediaref" %></li>
+        <li><%= link_to (image_tag 'twitter.png',  id: "socialmedia"), "https://twitter.com/caif", id: "socialmediaref" %></li>
+        <li><%= link_to (image_tag 'instagram.png',  id: "socialmedia"), "https://www.instagram.com/caif.repdom", id: "socialmediaref" %></li>
       </ul>
     </div>
 </nav>

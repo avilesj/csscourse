@@ -17,6 +17,12 @@
 
 @import "bootstrap";
 
+$main-color: #40b9bc;
+$main-color-light: #c8f4ea;
+$main-color-dark: #00adb1;
+$main-color-darker: #008e91;
+$secondary-color: #e21770;
+
 section{
     width: 100%;
     height: 100vh;
@@ -24,26 +30,53 @@ section{
 
 }
 
+#logo1 {
+  margin: 50px auto;
+  position: relative;
+  left: -300px;
+  height: 50%;
+  width: 50%;
+}
+
+#logo2 {
+position: absolute;
+width: 30%;
+height: auto;
+top: 120px;
+right: 50px;
+}
+
+
 #home{
-    background-image: url('CaifLogoMedium.jpg');
-    background-size: 100% 100%;
+
+
+  background: linear-gradient(to right, $main-color, $main-color-light);
+
+
     overflow-x: hidden;
-}
 
-.cl_white
-{
-    color: white;
-}
+    .jumbotron{
 
-.jumbotron{
+      background: rgba(255,255,255,0.8);
 
-  background: rgba(0,0,0,0.8);
+      max-width: 50vw;
+      min-height: 300px;
+      border-radius: 10px;
 
-    div {
-       opacity: 1;
+      box-shadow: 0 8px 16px -6px black;
+
+        div {
+           opacity: 1;
+        }
+
+    }
+
+    img:hover {
+        opacity: 1;
     }
 
 }
+
 
 .col-centered{
     float: none;
@@ -65,7 +98,12 @@ img:hover {
 }
 
 #contact {
-    background: silver;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,207cca+1,2989d8+50,7db9e8+100 */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(left, #1e5799 0%, #207cca 0%, #207cca 1%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #1e5799 0%,#207cca 0%,#207cca 1%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #1e5799 0%,#207cca 0%,#207cca 1%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 }
 
 textarea {
@@ -76,12 +114,39 @@ textarea {
 
     max-height: 35px;
     max-width: 35px;
-    margin-right: 10px;
+    margin-right: 25px;
     margin-top: 7px;
     padding: 1px;
 
 }
 
+#socialmediaref {
+  padding: 0px;
+}
+
 #socialcontainer{
     padding-right: 100px;
+}
+
+#work {
+  background-image: url('consultorio.png');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#serviciosheader{
+  color:white;
+}
+
+.navbar-default {
+background: linear-gradient(90deg, $main-color, $main-color-darker);
+border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: $secondary-color;
 }
