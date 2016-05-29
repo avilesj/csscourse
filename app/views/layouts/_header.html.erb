@@ -1,10 +1,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
     <ul id="Menu" class="nav navbar-nav">
-      <li><%= link_to "CAIF", root_path(:anchor => "home"), class: "navbar-brand" %></li>
-      <li><%= link_to "Nuestros Servicios", root_path(:anchor => "work") %></li>
-      <li><%= link_to "Acerca de nosotros", root_path(:anchor => "about") %></li>
-      <li><%= link_to "¿Cómo llegar?", root_path(:anchor => "location") %></li>
-      <li><%= link_to "Contacto", root_path(:anchor => "contact") %></li>
+      <li id="brandLogo"><%= link_to image_tag('CaifLogoLetras.png'), root_path(:anchor => "home"), class: "navbar-image-brand" %></li>
+      <li><%= link_to "CAIF", root_path(:anchor => "home"), class: "navbar-brand", id: "menuheader" %></li>
+      <li><%= link_to "Nuestros Servicios", root_path(:anchor => "work"), id: "menuheader" %></li>
+      <li><%= link_to "Acerca de nosotros", root_path(:anchor => "about"), id: "menuheader" %></li>
+      <li><%= link_to "¿Cómo llegar?", root_path(:anchor => "location"), id: "menuheader" %></li>
+      <li><%= link_to "Contacto", root_path(:anchor => "contact"), id: "menuheader" %></li>
     </ul>
     <div id="socialcontainer" class="container-fluid">
       <ul class="nav navbar-nav navbar-right">

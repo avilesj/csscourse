@@ -30,6 +30,10 @@ section{
 
 }
 
+#mainsection{
+  background-color: white;
+}
+
 #logo1 {
   margin: 50px auto;
   position: relative;
@@ -51,33 +55,61 @@ right: 50px;
 
 #home{
 
+}
 
-  background: linear-gradient(to right, $main-color, $main-color-light);
 
 
-    overflow-x: hidden;
-
-    .jumbotron{
-
-      background: rgba(255,255,255,0.8);
-
-      max-width: 50vw;
-      min-height: 300px;
-      border-radius: 10px;
-
-      box-shadow: 0 8px 16px -6px black;
-
-        div {
-           opacity: 1;
-        }
-
+.on-top{
+  position: absolute;
+   top: 30%;
+   bottom: 0;
+   left: 20%;
+   right:20%;
+   z-index: 99999;
+   background-color: white;
+    img{
+      width: 80%;
+      height: auto;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right:0;
+      position: absolute;
     }
 
-    img:hover {
-        opacity: 1;
-    }
+height: 165px;
+width:360px;
+-moz-border-radius-bottomright: 50px;
+-webkit-border-radius-bottomright: 50px;
+border-bottom-right-radius: 50px;
+}
+
+#imagen1{
+ background-image: url('slider1.jpg');
 
 }
+
+#imagen2 {
+ background-image: url('slider2.jpg');
+}
+
+#imagen3 {
+ background-image: url('slider3.jpg');
+
+}
+
+#imagen4 {
+ background-image: url('slider4.jpg');
+}
+
+@media (max-width: 767px) {
+    .container-slider {
+        margin-left: -20px;
+        margin-right: -10px;
+    }
+}
+
 
 .image-cropper {
     width: 250px;
@@ -146,15 +178,6 @@ right: 50px;
 }
 
 
-img {
-    width: 300px;
-    transition: opacity 1s case-in-out;
-}
-
-img:hover {
-    opacity: .5;
-}
-
 .col-text {
     -webkit-column-count: 3;
 }
@@ -183,6 +206,7 @@ textarea {
 
 #socialmediaref {
   padding: 0px;
+  padding-top: 10px;
 }
 
 #socialcontainer{
@@ -200,6 +224,7 @@ textarea {
 .navbar-default {
 background-color: white;
 border: none;
+height: auto;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -207,14 +232,29 @@ border: none;
   font-weight: bold;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
+.navbar-default .navbar-nav > li {
+ height: 70px;
+}
+
+#menuheader{
+  padding-top: 25px;
+}
+
+
+.navbar-default .navbar-nav > li > a > img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar-default .navbar-nav > li > a > img:hover {
+  background-color: white;
 }
 
 #Menu > li:hover {
     background-color: $secondary-color;
+    a{
     color: white;
-
+      }
 }
 
 #logoservicios{
