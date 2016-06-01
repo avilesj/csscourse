@@ -50,7 +50,18 @@ top: 120px;
 right: 50px;
 }
 #map{
-  height: 100%;
+  height: 400px;
+}
+
+#locationtext{
+  color: $secondary-color;
+}
+
+#locationtextdiv{
+  border-style: solid;
+  border-radius: 25px;
+  border-color: $secondary-color;
+  left: 20px;
 }
 
 #home{
@@ -242,15 +253,15 @@ height: auto;
 
 
 .navbar-default .navbar-nav > li > a > img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 50px;
 }
 
 .navbar-default .navbar-nav > li > a > img:hover {
   background-color: white;
 }
 
-#Menu > li:hover {
+#Menu > #menuheader:hover {
     background-color: $secondary-color;
     a{
     color: white;
