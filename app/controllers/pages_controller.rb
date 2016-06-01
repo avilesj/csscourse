@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
     def index
-      @latitude = 18.5015488
-      @longitude = -69.9420843
+      @latitude = 18.47129
+      @longitude = -69.95986
       @zoom = 17
       @title = "Centro de Atención Integral Familiar"
       @width = 36
