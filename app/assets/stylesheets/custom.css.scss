@@ -68,32 +68,35 @@ right: 50px;
 
 }
 
-
-
 .on-top{
   position: absolute;
-   top: 30%;
+   top: -450px;
    bottom: 0;
-   left: 20%;
-   right:20%;
+   left: -10%;
+   right:0;
    z-index: 99999;
-   background-color: white;
-    img{
-      width: 80%;
-      height: auto;
-      margin: auto;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right:0;
-      position: absolute;
-    }
+   background-color: rgba(226, 23, 112, 0.5);
+   border-radius: 25px;
 
-height: 165px;
+   p, h1{
+     opacity: 1;
+     color: white;
+   }
+
+   p{
+     font-size: 22px;
+   }
+height: 365px;
 width:360px;
--moz-border-radius-bottomright: 50px;
--webkit-border-radius-bottomright: 50px;
-border-bottom-right-radius: 50px;
+}
+
+  .slider-text{
+    text-align: left;
+    position: absolute;
+    left: 50px;
+    li{
+      font-size: 20px;
+    }
 }
 
 #imagen1{
