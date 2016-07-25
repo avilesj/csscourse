@@ -32,6 +32,17 @@ body {
     -o-background-size: cover;
 }
 
+.adjusted {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: auto 650px;
+    -moz-background-size: auto 650px;
+    background-size: auto 650px;
+    -o-background-size: auto 650px;
+    background-repeat: no-repeat;
+}
+
 footer {
     margin: 50px 0;
 }
